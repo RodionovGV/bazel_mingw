@@ -1,0 +1,4 @@
+bazel-bazel_mingw
+bazel-bin
+bazel-out
+*.lock
