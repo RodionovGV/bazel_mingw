@@ -1,0 +1,133 @@
+{
+  "workbench.colorTheme": "Default Light Modern",
+  "files.associations": {
+    "*.htm": "htm",
+    "iostream": "cpp",
+    "string": "cpp",
+    "ostream": "cpp"
+  },
+  "vim.visualModeKeyBindingsNonRecursive": [
+  ],
+
+  "code-runner.executorMap": {"c": "set PYTHONIOENCODING=utf8 && py -u"},
+  
+  "bookmarks.saveBookmarksInProject": true,
+  "editor.tabSize": 2,
+  "terminal.integrated.fontWeightBold": "bold",
+  "vim.mouseSelectionGoesIntoVisualMode": true,
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.cursorStylePerMode.normal": "block",
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "d"],
+      "after": ["d", "d"]
+    },
+    {
+      "before": ["<C-n>"],
+      "commands": [":nohl"]
+    },
+    {
+      "before": ["K"],
+      "commands": ["lineBreakInsert"],
+      "silent": true
+    },
+    {
+      "before": [
+          "о"
+      ],
+      "after": [
+          "j"
+      ]
+    },
+    {
+      "before": [
+          "л"
+      ],
+      "after": [
+          "k"
+      ]
+    },
+    {
+      "before": [
+          "д"
+      ],
+      "after": [
+          "l"
+      ]
+    },
+    {
+      "before": [
+          "ш"
+      ],
+      "after": [
+          "i"
+      ]
+    },
+  ],
+  "vim.visualModeKeyBindings": [
+    {
+        "before": [
+            ">"
+        ],
+        "commands": [
+            "editor.action.indentLines"
+        ]
+    },
+    {
+        "before": [
+            "<"
+        ],
+        "commands": [
+            "editor.action.outdentLines"
+        ]
+    },
+  ],  
+  "vim.leader": "<space>",
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-c>": false,
+    "<C-v>": false,
+    "<C-x>": false,
+    "<C-z>": false,
+    "<C-y>": false,
+    "<tab>": false,
+    "<C-f>": false
+  },
+  "editor.unicodeHighlight.nonBasicASCII": false,
+  "dart.flutterSdkPath": "C:\\flutter",
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [
+      80
+    ],
+    "editor.selectionHighlight": false,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": "off"
+  },
+  "cmake.configureOnOpen": true,
+  "security.workspace.trust.untrustedFiles": "open",
+  "bookmarks.sideBar.countBadge": "files",
+  "bookmarks.sideBar.expanded": true,
+  "vim.autoSwitchInputMethod.obtainIMCmd": "d:\\g_rodionov\\Downloads\\im\\im-select.exe",
+  "vim.autoSwitchInputMethod.switchIMCmd": "d:\\g_rodionov\\Downloads\\im\\im-select.exe {im}",
+  "vim.autoSwitchInputMethod.defaultIM": "1033",
+  "vim.autoSwitchInputMethod.enable": true,
+  "editor.stickyScroll.enabled": true,
+  "codeium.enableCodeLens": false,
+  "codeium.enableConfig": {
+    "*": true
+  }
+}

@@ -1,4 +1,4 @@
-# build configurations
+# build configurations for MINGW
 build --incompatible_enable_cc_toolchain_resolution             # allow bazel to use custom toolchains
 build --platforms=@mingw//platforms:windows_platform            # tell bazel to build using the custom platform
 build --extra_toolchains=@mingw//toolchains:mingw_cc_toolchain  # tell bazel to build using the custom toolchain
