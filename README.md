@@ -11,5 +11,5 @@ bazel run --config=gcc --define lib_abseil=off //:main --verbose_failures
 ```
 Компиляция компилятором по умолчанию с abseil:
 ```
-bazel run --define lib_abseil=off //:main --verbose_failures
+bazel run --define lib_abseil=on //:main --verbose_failures
 ```

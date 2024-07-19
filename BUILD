@@ -54,6 +54,7 @@ cc_binary(
     ],
      deps = [":info_build_lib",
              ":driver_file",
+             "//logger:logger",
              ]
 )
 
