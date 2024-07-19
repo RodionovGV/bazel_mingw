@@ -16,15 +16,14 @@ config_setting(
     visibility = ["//visibility:public"],
 )
 
-
 cc_library(
     name = "driver_file",
     srcs = ["driver_file/driver_file.cpp"],
     hdrs = ["driver_file/driver_file.h"],
     #copts = ["-DABSL_DEFINE=2"],
     copts = select({
-        ":abseil_on":["-DABSL_DEFINE=2"],
-        ":abseil_off":["-DABSL_DEFINE=1"],
+        ":abseil_on":["-DABSL_ON"],
+        ":abseil_off":["-DABSL_OFF"],
     }),
     deps = select({
         ":abseil_on": [
