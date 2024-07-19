@@ -9,6 +9,12 @@ cc_library(
     name = "driver_file",
     srcs = ["driver_file/driver_file.cpp"],
     hdrs = ["driver_file/driver_file.h"],
+    deps = [
+        "@com_google_absl//absl/log:log",
+        "@com_google_absl//absl/log:initialize",
+        "@com_google_absl//absl/log:globals",
+        "@com_google_absl//absl/base:log_severity",
+    ],
 )
 
 cc_test(
@@ -29,3 +35,4 @@ cc_binary(
      deps = [":info_build_lib",
              ":driver_file"]
 )
+
