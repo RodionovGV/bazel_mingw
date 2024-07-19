@@ -1,0 +1,9 @@
+# build configurations for MINGW
+build:default --cxxopt="-std=c++11"
+
+# Конфигурация для GCC
+build:gcc --incompatible_enable_cc_toolchain_resolution             # allow bazel to use custom toolchains
+build:gcc --platforms=@mingw//platforms:windows_platform            # tell bazel to build using the custom platform
+build:gcc --extra_toolchains=@mingw//toolchains:mingw_cc_toolchain  # tell bazel to build using the custom toolchain
+build:gcc --define=MINGW_PATH="C:\\\\msys64\\\\mingw64"            	# !!! var to set the correct local toolchain path 
+build:gcc --define=GCC_VERSION="14.1.0"                             # var to set the correct toolchain GCC version

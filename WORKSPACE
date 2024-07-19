@@ -17,8 +17,8 @@ git_repository(
   tag = "release-1.8.1"
 )
 
+# Подключаю bazel библиотеку, с выгрузкой из интернета
 load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
-
 http_archive(
   name = "com_google_absl",
   urls = ["https://github.com/abseil/abseil-cpp/releases/download/20240116.2/abseil-cpp-20240116.2.tar.gz"],  # 2020-02-11T18:50:53Z

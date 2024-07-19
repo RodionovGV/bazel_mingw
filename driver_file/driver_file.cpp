@@ -1,9 +1,14 @@
 #include <iostream>
-#include "absl/log/log.h"
-
 
 void driver_module(){
   using namespace std;
-  cout << "driver file run" << endl;
-  LOG(INFO) << "Hello, Abseil logging!";
+  #if ABSL_DEFINE == 2
+  cout << "driver file run 2" << endl;
+  #endif
+  #if ABSL_DEFINE == 1
+  cout << "driver file run 1" << endl;
+  #endif
+  #if ABSL_DEFINE == 0
+  cout << "driver file run 0" << endl;
+  #endif
 }

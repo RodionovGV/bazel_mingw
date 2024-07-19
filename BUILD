@@ -5,10 +5,16 @@ cc_library(
     hdrs = ["info_build.h", "func_other.h"],
 )
 
+config_setting(
+    name = "compiler",
+    values = {"cpu": "arm"},
+)
+
 cc_library(
     name = "driver_file",
     srcs = ["driver_file/driver_file.cpp"],
     hdrs = ["driver_file/driver_file.h"],
+    copts = ["-DABSL_DEFINE=2"],
     deps = [
         "@com_google_absl//absl/log:log",
         "@com_google_absl//absl/log:initialize",
