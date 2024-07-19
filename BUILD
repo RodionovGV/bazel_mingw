@@ -53,6 +53,7 @@ cc_binary(
         "main.cpp",
     ],
      deps = [":info_build_lib",
-             ":driver_file"]
+             ":driver_file",
+             ]
 )
 
