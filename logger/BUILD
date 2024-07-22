@@ -1,6 +1,7 @@
 cc_library(
     name = "logger",
-    hdrs = ["logger.h", "logger_factory.h", "logger_cout.h", "logger_abseil.h"],
+    srcs = ["logger_factory.cpp", ],
+    hdrs = ["logger_header.h", "logger.h","logger_cout.h", "logger_abseil.h"],
     copts = select({
         ":abseil_on":["-DABSL_ON"],
         ":abseil_off":["-DABSL_OFF"],

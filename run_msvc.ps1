@@ -6,4 +6,4 @@ $OutputEncoding = [System.Text.Encoding]::UTF8
 $InputEncoding = [System.Text.Encoding]::UTF8
 
 # Запускаем команду Bazel
-bazel run --define lib_abseil=on //:main
+bazel run --define lib_abseil=on //:main --verbose_failures
